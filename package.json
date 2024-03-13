@@ -1,0 +1,19 @@
+{
+  "name": "helperchildtheme-v2",
+  "version": "1.0.0",
+  "description": "Scss compiler, node version 19.9.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch --update --style=expanded scss/styles.scss:dist/css/styles.css",
+    "prod": "sass --no-source-map --style=compressed scss/styles.scss:dist/css/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.71.0"
+  }
+}
