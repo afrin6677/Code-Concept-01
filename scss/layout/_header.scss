@@ -1,13 +1,14 @@
 .header {
   position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
+  
   border-bottom: 1px solid #F2F4F7;
 
 
   @include desktop-small {
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 3;
     padding: 0rem !important;
   }
@@ -60,7 +61,7 @@
           }
   
           &.active a {
-            color: var(--color-black);
+            color: var(--color-primary-light) !important;
           }
         }
       }

@@ -110,14 +110,16 @@
 					{% endif %}
 
 
-					{% set footer_style = theme['footer_style'] %}
+					{# {% set footer_style = theme['footer_style'] %}
 
 					{% if footer_style == 'logo-right' %}
 						{% include 'partials/footer-right-logo.html.twig' %}
 					{% else %}
-						{# Default #}
 						{% include 'partials/footer-default.html.twig' %}
-					{% endif %}
+					{% endif %} #}
+
+					{# Default #}
+					{% include 'partials/footer.html.twig' %}
 				{% endblock footer %}
 
 				{% include 'partials/notifications.html.twig' %}
